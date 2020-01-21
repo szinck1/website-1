@@ -4,8 +4,8 @@ description = "Submitting Kubernetes resources from a Jupyter notebook"
 weight = 40
 +++
 
-Kubeflow assigns the `jupyter-notebook` service account to the Jupyter notebook
-Pods. This service account is bound to the `jupyter-notebook` role, which has namespace-scoped permissions to the following Kubernetes resources:
+Kubeflow assigns the `default-editor` service account to the Jupyter notebook
+Pods. This service account is bound to the `kubeflow-edit` cluster role, which has namespace-scoped permissions to the following Kubernetes resources:
 
 * Pods
 * Deployments
